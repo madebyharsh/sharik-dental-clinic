@@ -1,0 +1,65 @@
+.bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #ffffff;
+  border-top: 1px solid #dce8f0;
+  box-shadow: 0 -4px 20px rgba(0, 119, 182, 0.1);
+  padding: 0.75rem 1rem;
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+  gap: 0.75rem;
+}
+
+.btnCall,
+.btnWhatsapp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.975rem;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btnCall {
+  background: #0077b6;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 119, 182, 0.25);
+}
+
+.btnCall:hover {
+  background: #005f8e;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(0, 119, 182, 0.32);
+}
+
+.btnWhatsapp {
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
+}
+
+.btnWhatsapp:hover {
+  background: #1ebe5c;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(37, 211, 102, 0.32);
+}
+
+/* Hide on large screens — optional: remove if you want it always visible */
+@media (min-width: 900px) {
+  .bar {
+    max-width: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px 16px 0 0;
+    border-left: 1px solid #dce8f0;
+    border-right: 1px solid #dce8f0;
+  }
+}
