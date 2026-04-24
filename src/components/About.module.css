@@ -1,0 +1,136 @@
+.about {
+  padding: 5rem 1.25rem;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Image placeholder */
+.imagePlaceholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0f3fb, #b3ddf2);
+  border: 4px solid #0077b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0077b6;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+.qualifications {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0077b6;
+  background: #e8f4fb;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #b3ddf2;
+  align-self: center;
+}
+
+.bio {
+  font-size: 0.975rem;
+  color: #5a6a7a;
+  line-height: 1.8;
+  max-width: 580px;
+  align-self: center;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.statValue {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0077b6;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: #5a6a7a;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Desktop: side-by-side layout */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.5rem;
+  }
+
+  .imagePlaceholder {
+    width: 220px;
+    height: 220px;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .qualifications {
+    align-self: flex-start;
+  }
+
+  .bio {
+    align-self: flex-start;
+  }
+
+  .stats {
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
+}
