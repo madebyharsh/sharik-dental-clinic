@@ -40,28 +40,28 @@ const services = [
 
 export default function Services() {
   return (
-    <section className={styles.services} id="services">
+    <section className={styles.services} id="services" aria-labelledby="services-heading">
       <div className={styles.container}>
 
-        <div className={styles.header}>
-          <span className={styles.label}>What We Offer</span>
-          <h2 className={styles.heading}>Our Dental Services</h2>
+        <header className={styles.header}>
+          <span className={styles.label} role="note">What We Offer</span>
+          <h2 className={styles.heading} id="services-heading">Our Dental Services</h2>
           <p className={styles.subtext}>
             From routine care to advanced cosmetic procedures — all under one roof.
           </p>
-        </div>
+        </header>
 
-        <div className={styles.grid}>
+        <ul className={styles.grid} role="list" aria-label="List of dental services">
           {services.map((service) => (
-            <div key={service.title} className={styles.card}>
-              <div className={styles.iconWrap}>
+            <li key={service.title} className={styles.card}>
+              <div className={styles.iconWrap} aria-hidden="true">
                 <span className={styles.icon}>{service.icon}</span>
               </div>
               <h3 className={styles.title}>{service.title}</h3>
               <p className={styles.description}>{service.description}</p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
 
       </div>
     </section>

@@ -2,8 +2,16 @@ import styles from './StickyCTA.module.css';
 
 export default function StickyCTA() {
   return (
-    <div className={styles.bar}>
-      <a href="tel:+918400005628" className={styles.btnCall}>
+    <div
+      className={styles.bar}
+      role="complementary"
+      aria-label="Quick contact options"
+    >
+      <a
+        href="tel:+918400005628"
+        className={styles.btnCall}
+        aria-label="Call Family Dental Care now"
+      >
         📞 Call Now
       </a>
       <a
@@ -11,6 +19,7 @@ export default function StickyCTA() {
         target="_blank"
         rel="noopener noreferrer"
         className={styles.btnWhatsapp}
+        aria-label="Book appointment on WhatsApp"
       >
         💬 WhatsApp
       </a>
