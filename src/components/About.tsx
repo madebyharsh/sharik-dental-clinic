@@ -40,7 +40,7 @@ export default function About() {
           <dl className={styles.stats} aria-label="Clinic statistics">
             <div className={styles.stat}>
               <dt className={styles.statLabel}>Experience</dt>
-              <dd className={styles.statValue}>7+ Yrs</dd>
+              <dd className={styles.statValue}>5+ Yrs</dd>
             </div>
             <div className={styles.stat}>
               <dt className={styles.statLabel}>Patients Treated</dt>

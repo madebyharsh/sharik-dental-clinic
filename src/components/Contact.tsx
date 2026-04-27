@@ -62,7 +62,9 @@ export default function Contact() {
               <p className={styles.infoTitle}>Hours</p>
               <p className={styles.infoValue}>
                 <time dateTime="Mo-Sa 10:00-20:00">
-                  Mon – Sat &nbsp;·&nbsp; 10:00 AM – 8:00 PM
+                  Opening hrs &nbsp;·&nbsp; 10:00 AM – 7:00 PM
+                  <br/>
+                  <b><i>CLOSED ON : TUESDAYS</i></b>
                 </time>
               </p>
             </div>
